@@ -1,0 +1,26 @@
+p {
+    height: 50px;
+	/* background-color: red; */
+	font-size: 30px;
+	font-family: "微软雅黑";
+	font-weight: 900; /* 400为normal 默认值 */
+	font-style: italic; /* 倾斜  italic小   oblique大  normal正常*/
+	line-height: 50px;  /* line-height等于行高 就可以居中(垂直) */
+	color: blue;
+	color: #f31d45;
+	color: rgb(255,255,255);
+	color: rgba(0,0,0,1);  /* 最后代表透明度  0代表透明  1代表不透明 */
+	text-align: center;
+	
+	text-decoration: underline; /* 修饰 */
+	text-indent: 40px;  /* 缩进 可以为负 可以用作爬虫*/
+	
+	word-spacing: 15px;  /*英文单词间距离  */
+	letter-spacing: 5px; /*英文字母间距离  */
+	
+	text-transform: capitalize; /*全大 全小 首大*/
+	
+	/* 阴影 */
+	/* text-shadow: 5px 10px pink; */
+}
+

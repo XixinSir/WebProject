@@ -1,0 +1,192 @@
+<!DOCTYPE 用H5标准来解析这个文件  说明这个文档是什么类型的>
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<!-- HTML标签可以没有缩进   就算所有的写一行都可以 -->
+		<!DOCTYPE charset是编码格式>
+		<!DOCTYPE meta为空标签  title为常规标签>
+		<meta charset="utf-8" />
+		<!DOCTYPE title为网页的标题>
+		<title>sunck is a good man</title>
+	</head>
+	<body>
+		第一个页面
+		<!--  control + s 就可以把注释标签打出来 只可以一行一行注释-->
+	    <!-- 页面会跳转到前面 即页面头部调到此处 且URL中含有mao1 -->
+		<a href="#mao1">跳转锚点</a>
+		
+		<!--标题标签 出现在文章中  越来越小-->
+		<h1>sunck is a good man</h1>
+		<h2>sunck is a good man</h2>
+		<h3>sunck is a good man</h3>
+		<h4>sunck is a good man</h4>
+		<a name="mao1"></a>
+		<h5 style="background: blue;">sunck is a good man</h5>
+		
+		<!-- br空标签 换行标签 手动换行不生效-->
+		sunck is a good mansunck is a good mansunck is a good man
+	    sunck is a good man <br> sunck is a good man <br> sunck is a good man
+		
+		<!-- 段落标签 文章的段落一般用p标签-->
+		<p>中共第十五届中央候补委员，十六届、十七届、十八届、十九届中央委员，十七届中央政治局委员、常委、
+		中央书记处书记，十八届、十九届中央政治局委员、常委、中央委员会总书记。第十一届全国人大第一次会议当选为中华人民共和国副主席。
+		十七届五中全会增补为中共中央军事委员会副主席。第十一届全国人大常委会第十七次会议任命为中华人民共和国中央军事委员会副主席。
+		十八届一中全会任中共中央军事委员会主席。第十二届全国人大第一次会议当选为中华人民共和国主席、中华人民共和国中央军事委员会主席。
+		十九届一中全会任中共中央军事委员会主席。第十三届全国人大第一次会议当选为中华人民共和国主席、中华人民共和国中央军事委员会主席。</p>
+		
+		<p>2013－中央委员会总书记，中共中央军事委员会主席，中华人民共和国主席，中华人民共和国中央军事委员会主席</p>
+		
+		<!-- 水平线标签 hr  代表一个水平线  一般放文章标题下面-->
+		<!-- 锚点 可以调到此处-->
+		
+        <hr /> 
+		sunck is a good man 
+		
+		<br>
+		<!-- 字体样式标签  strong b  效果一样  strong表语气的加强 b字体样式的加粗-->
+		<!-- 加粗 -->
+		<strong>sunck is a good man </strong> <br>
+		<b>sunck is a nice man</b> <br>
+		
+		<!-- 倾斜 -->
+		<em>sunck is a good man</em> <br> 
+		<i>sunck is a good man</i>
+		
+		
+		
+		<!-- 特殊符号 -->
+		
+		<br>
+		<!-- 空格 自己写的空格只显示一个 &nbsp;      用圆角的中文输入法也可以输出中文-->
+	    <p>sunck  is a   good man</p>
+		<p>sunck&nbsp;&nbsp;&nbsp;&nbsp;is  a good man</p> <br>
+		
+		
+		<!-- 大于&gt;    小于&lt;   引号&quot;  版权符号@copy;  -->
+		<!-- > -->
+		&gt;  <br>
+		<!-- < -->
+		&lt;  <br> 
+		<!-- " -->
+	    &quot;  <br>
+		<!-- @ -->
+		&copy;
+		
+		
+		<!-- 图像标签 JPG GIF PNG         BMP -->
+		
+		<!-- img是标签 src地址 
+		alt当图片加载失败,显示核桃   alt对爬虫有用 知道图片大概是干嘛的
+		title鼠标放到图片上 会显示大核桃
+		不设置默认用图片大小
+		width
+		height-->
+		<br>
+		<img src="img/几种图片标签的区别.png" alt="核桃" title="大核桃" >
+		<br>
+		<img src="img/几种图片标签的区别.png" alt="核桃" title="大核桃" width="233" height="340">
+		
+		<br>
+		
+		
+		
+		<!-- 链接标签  标签开始和结束是网页上显示的内容-->
+	    <!-- a 
+		 href    链接路径
+		 target  在哪个窗口打开  _slef自己打开  _blank新窗口打开
+		 -->
+		 <!-- 文本   点开是网址 -->
+		<a href="https://www.baidu.com" target="_blank">百度一下</a>  <br>
+		<br>
+		<!-- 文本 点开就是一张图片 -->
+		<a href="img/1.png" target="_blank">来点我哦</a>
+		<br>
+		<!-- 图片 点开是网址 -->
+		<a href="https://www.baidu.com"><img src="img/1.png" ></a>
+		
+		<!--锚链接 比如页面比较长  点不同地方调到不同地方  
+		----从A页面的甲位置跳转到A页面的已位置
+		----从A页面的甲位置跳转到B页面的已位置
+		----在目标标签中设置id属性=值， 链接处href='[路径]#值'
+		----设置<a name='值'>目标</a>, 在链接链接处href='[路径]#值'
+		-->
+		
+		
+		
+		<!-- 列表
+		 有序列表      段落前有数字      有编号
+		 无序列表      段落前是正方形    无编号
+		 定义列表     自定义的列表  -->
+		
+		<!-- 无序列表 无编号
+		属性type
+		disc      项目符号默认为实体圆心
+		square    项目符号为实体方心
+		circle    项目符号空心圆-->
+		<ul type="square">
+			<li><a href="https://www.baidu.com">新闻</a></li>
+			<li>sunck is a good man</li>
+			<li>sunck is a good man</li>
+		</ul>		
+		
+		
+		
+		<!-- 有序列表  有编号
+		type属性
+		1       使用数字作为项目符
+		A/a     大/小写
+		I/i     大/小写罗马数字-->
+		<ol type="A">
+			<li><a href="https://www.baidu.com">新闻</a></li>
+			<li>sunck is a good man</li>
+			<li>sunck is a good man</li>
+		</ol>
+		
+		
+		<!-- 定义列表 -->
+		
+		<dl>
+			<dt>学院1</dt>
+			<dd>电子信息工程1</dt>
+			<dd>电子信息工程11</dt>
+			<dt>学院2</dt>
+			<dd>电子信息工程2</dt>
+		</dl>
+		
+		<!-- 表格        属性:
+		align(水平对齐方式):   left(左对齐)   right(右对齐)    center(居中对齐)
+		border为框的粗度
+		cellspacing  行间距-->
+		<table align="right" border="1" cellspacing="0" cellpadding="5">
+			<tr>
+				<th>姓名</th>
+				<th>年龄</th>
+				<th>性别</th>
+			</tr>
+			
+			
+			<tr >
+				<td colspan="2">第一行第一列ffff</td>
+				<td>第一行第二列</td>
+				<!-- <td>第一行第三列</td>   要规划好-->
+			</tr>
+			<tr>
+				<td>第二行第一列</td>
+				<td>第二行第二列</td>
+				<td rowspan="2">第二行第三列</td>
+			</tr>
+			
+			<tr>
+				<td>第三行第一列</td>
+				<td>第三行第二列</td>
+				<!-- <td>第三行第三列</td> -->
+			</tr>
+		</table>		
+		
+		
+		
+		
+		
+	</body>
+</html>
