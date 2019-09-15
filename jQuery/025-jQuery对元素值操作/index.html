@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js">
+		</script>
+	</head>
+	<body>
+		
+		
+		<input type="text" class="input" id="div1" value="sunck is a good man" />
+		<input type="text" class="input" id="div2" value="sunck is a good man" />
+		
+		a<input type="radio" name="a"  value="1" />
+		b<input type="radio" name="a"  value="2" />
+		c<input type="radio" name="a"  value="3" />
+		
+		<select multiple="multiple">
+			<option >列表1</option>
+			<option selected="selected">列表2</option>
+			<option selected="selected">列表3</option>
+			
+			
+		</select>
+		
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				
+				$div = $(".input")
+				
+				// 获取值 (只能获取第一个)
+				console.log($div.val())
+				
+				
+				// 设置值 (所有的)
+				$div.val("nice man")
+				
+				
+				// 获取值 (只能获取第一个)
+				console.log($div.val())
+				
+				
+				
+				// val(value)   check  select radio    可以为这几种类型设置值
+				$("input[name='a']").val([3])
+				
+				
+				$("select").val(["列表1", "列表3"])
+			})
+		</script>
+		
+	</body>
+</html>

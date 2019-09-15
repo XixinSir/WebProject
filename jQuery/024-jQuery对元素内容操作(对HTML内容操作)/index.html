@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js">
+		</script>
+	</head>
+	<body>
+		<div ><p>sunck is a good11 man</p></div>
+		<div ><p>sunck is a good12 man</p></div>
+		
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				/*
+				对元素内容操作(对HTML内容操作)
+				html()      用于获取第一个匹配元素的HTML内容
+				html(val)   用于设置全部匹配元素的HTML内容
+				
+				注意: 内容汇总包含HTML代码可以被浏览器解析
+				
+				注意: html()和html(val)
+				不能用于XML文档 但是可以用于XHTML文档
+				*/  
+				$div = $("div")
+				console.log($div.html())
+				
+				// 对比这两个的区别
+				$div.html("<h1>sunck is a nice man</ h1>")   // 会解析为DOOM元素
+
+				
+				
+			})
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post" action="/sunck/verifycodecheck/">
+        {% csrf_token %}
+        <input type="text" name="verifycode"/>
+        <!--请求这个路由的页面-->
+        <img src="/sunck/verifycode/">
+        <input type="submit" value="登陆"/>
+        <span>{{flag}}</span>
+    </form>
+</body>
+</html>

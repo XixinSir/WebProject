@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>yellow</title>
+		<script type="text/javascript" src="js/style.js" charset="UTF-8">
+		</script>
+	</head>
+	<body style="height: 1000px; background-color: yellow;">
+		<button type="button" onclick="func()">跳转到主页</button>
+		<script type="text/javascript">
+			function func(){
+				window.history.go(-2);
+			}
+			
+			//显示历史记录
+			
+			document.write("<br>");
+			document.write(window.history.length);
+		</script>
+	</body>
+</html>
+

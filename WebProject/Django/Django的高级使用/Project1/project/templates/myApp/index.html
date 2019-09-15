@@ -1,0 +1,18 @@
+<!--从staticfiles文件加载static标签-->
+{% load static from staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css"
+          href="{% static 'myApp/css/style.css' %}"/>
+    <script type="text/javascript" src="/static/myApp/js/style.js">
+    </script>
+</head>
+<body>
+    <h1>sunck is a good man</h1>
+    <img src="/static/myApp/img/1.png">
+    <!--和STATIC_URL进行拼接-->
+    <img src="{% static 'myApp/img/2.png' %}">
+</body>
+</html>

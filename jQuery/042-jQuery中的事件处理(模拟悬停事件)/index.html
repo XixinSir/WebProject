@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js">
+		</script>
+	</head>
+	<body>
+
+		<button id="btn">添加一个P标签</button>
+		<div id="box2">
+			<p>sunck is a good man</p>
+			<p>sunck is a nice man</p>
+			<p>sunck is a cool man</p>
+			<p>sunck is a handsome man</p>
+		</div>
+		<button id="btn2">按钮</button>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript">
+			$(document).ready(function() {
+				
+				$("#btn").hover(function() {
+					// $("div#box2").append("<p>移入</p>")
+					console.log(1)
+				}, function() {
+					// $("div#box2").append("<p>移出</p>")
+					console.log(2)
+				})
+				
+				
+				// $("#btn").mousemove(function() {
+				// 	$("div#box2").append("<p>移入</p>")
+				// })
+				// 
+				// $("#btn").bind("mouseout", function() {
+				// 	$("div#box2").append("<p>移出</p>")
+				// })
+				
+			})	
+		</script>
+	</body>
+</html>

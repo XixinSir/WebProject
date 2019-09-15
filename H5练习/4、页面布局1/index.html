@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	
+	<!-- 
+	 HTML注释  <!- 注释内容 ->
+	 CSS注释   /* 注释内容 */
+	 
+	 -->
+	
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		
+		<!-- 所有标签的padding都为0  margin都为0 -->
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+		
+		<style type="text/css">
+			#box {
+				width: 700px;
+				height: 3000px;
+				/* background-color: orange; */
+				/* 居中 */
+				margin: 0 auto;  
+			}
+			
+			#logol {
+				/* 宽度默认是父级的 */
+				height: 100px;
+				background-color: yellow;
+			}
+
+			#nav {
+				height: 26px;
+				background-color: red;
+				/* 边框    线(也有虚线、点)  黑色   边框的宽度*/
+				border: solid black 5px;
+			}
+			
+			
+			#Main {
+				height: 600px;
+			}
+			
+			/* 平分父级的 这两个默认是上下排列的  父级是700 这两个加起来要小于700  要不然要设置float*/
+			#leftMain {
+				/* inline-block可以横向排列 还可以设置宽度 */
+				display: inline-block;
+				width: 350px;
+				background-color: blue;
+				height: 300px;
+			}
+			
+			#rightMain {
+				display: inline-block;
+				width: 350px;
+				height: 200px;
+				background-color: pink;
+				float: right;
+			}
+			
+			#foot {
+				height: 80px;
+				background-color: #FFFF00;
+			}
+			
+		</style>
+		
+		
+	</head>
+	<body>
+		<div id="box">
+			<!-- div就是做布局的 
+			页面里的id值是唯一的-->
+
+			<!-- logo -->
+			<div id="logol">
+			</div>
+
+			<!-- nav导航 -->
+			<div id="nav">
+			</div>
+
+			<!-- 广告 -->
+			<!-- <div id="guanggao">
+			</div> -->
+
+			<!-- 主体 -->
+			<div id="map">
+				<div id="leftMain">
+				</div>
+
+				<div id="rightMain">
+				</div>
+
+
+				<!-- 底部 -->
+				<div id="foot">
+				</div>
+			</div>
+		</ div>
+	</body>
+</html>

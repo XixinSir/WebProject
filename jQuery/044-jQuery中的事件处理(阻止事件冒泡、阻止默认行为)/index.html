@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		
+		<style type="text/css">
+			#box {
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="box"></div>
+		<input type="text" name="in" id="put" />
+		<a href="red.html" id="link">点我跳转</a>
+		
+		<script type="text/javascript">
+			
+			$(document).ready(function() {
+				
+				$("body").bind("click", function() {
+					$(this).css("background-color", "blue")
+				})
+				
+				
+				$("#box").bind("click", function(e) {
+					$(this).css("background-color", "yellow")
+					
+					
+					// e.stopPropagation() 
+					
+					
+					//  可以阻止冒泡和默认行为
+					return false 
+				})
+				
+				$("#put").bind("click", function(e) {
+					// e.stopPropagation()
+					return false
+				})
+				
+				
+				$("#link").bind("click", function(e) {
+					e.stopPropagation()
+					var d = window.confirm("网址有病毒!确认继续访问?")
+					if (d == false) {
+					// 	
+					// 	e.preventDefault()
+					
+					return false 
+					}
+				})
+				
+			})	
+		</script>
+	</body>
+</html>

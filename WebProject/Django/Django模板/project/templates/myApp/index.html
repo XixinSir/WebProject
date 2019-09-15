@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+
+    <a href="{% url 'app:good' 1 %}">链接</a>
+
+    <h1>sunck is a good man</h1>
+
+    <!--<h1>传递的数值1为: {{num1}}</h1>-->
+    <!--<h1>传递的数值2为: {{num2}}</h1>-->
+    <h1>{{student.sname}}</h1>
+    <h1>{{student.getContend}}</h1>
+
+    {% if num %}
+        <h1>num的值不为0</h1>
+    {% endif %}
+
+    {% comment %}
+        <h1>num的值不为0</h1>
+        {{}}
+    {% endcomment %}
+
+    {% ifequal "sunck" "sunck" %}
+        <h1>两个值相等</h1>
+    {% endifequal %}
+
+    <h1>{{str|upper}}</h1>
+
+    <h1>{{list|join:"=="}}</h1>
+
+    <h1>{{test|default:"没有"}}</h1>
+
+    <h1>num={{num}}</h1>
+    <h1>num={{num|add:10}}</h1>
+    <h1>num={{num|add:-10}}</h1>
+    <!-- num/1*5 -->
+    <!-- num*5-->
+    <h1>num={% widthratio num 1 5 %}</h1>
+    <!-- num/2*1 -->
+    <!-- num/2-->
+    <h1>num={% widthratio num 2 1 %}</h1>
+
+    {{code}}
+    <hr/>
+    {{code|escape}}
+    <hr/>
+    {{code|safe}}
+    <hr/>
+    {% autoescape off %}
+        {{ code }}
+    {% endautoescape %}
+
+</body>
+</html>

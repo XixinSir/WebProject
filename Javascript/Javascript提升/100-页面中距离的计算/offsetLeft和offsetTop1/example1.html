@@ -1,0 +1,54 @@
+
+<!-- 第一个例子中，三个div的上一级的定位元素都是body，
+body是最外层的定位元素，三个div获取到的offsetLeft值跟offsetTop值都是相对于body的偏移量。 -->
+
+
+<!-- 
+box1: 100,100
+box2: 200,200
+box3: 300,300
+ -->
+ 
+ 
+<body>
+	<style>
+		body {
+			margin: 0;
+		}
+		.box1 {
+			width: 300px;
+			height: 300px;
+			margin: 100px;
+			background: #333;
+			overflow: hidden;
+		}
+		.box2 {
+			width: 200px;
+			height: 200px;
+			margin: 100px;
+			background: #666;
+			overflow: hidden;
+		}
+
+		.box3 {
+			width: 100px;
+			height: 100px;
+			margin: 100px;
+			background: #999;
+		}
+	</style>
+	<div class="box1">
+		<div class="box2">
+			<div class="box3"></div>
+		</div>
+	</div>
+	<script>
+		var oBox1 = document.querySelector('.box1');
+		var oBox2 = document.querySelector('.box2');
+		var oBox3 = document.querySelector('.box3');
+
+		console.log('box1: ' + oBox1.offsetLeft + ',' + oBox1.offsetTop);
+		console.log('box2: ' + oBox2.offsetLeft + ',' + oBox2.offsetTop);
+		console.log('box3: ' + oBox3.offsetLeft + ',' + oBox3.offsetTop);
+	</script>
+</body>

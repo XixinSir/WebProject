@@ -1,0 +1,10 @@
+进入cmd命令
+
+
+python
+import django 
+django.getversion() 
+如果出来版本号 说明安装成功
+
+
+创建一个项目:  django-admin startproject project 

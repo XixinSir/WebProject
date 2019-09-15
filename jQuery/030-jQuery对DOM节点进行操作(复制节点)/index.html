@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js">
+		</script>
+	</head>
+	<body>
+		<div id="box1">
+			<p><a>sunck is a nice man</a></p>
+			<p>sunck is a good man</p>
+		</div>
+		
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				
+				// 第一个p标签
+				$("#box1 p:eq(0)").bind("click", function() {
+					
+					/*
+					this     代表触发当前事件的对象(DOM对象)
+					$(this)  转换为jQuery对象
+					克隆出来的添加到身后
+					
+					加true会把 事件处理程序也复制
+					*/
+					$(this).clone(true).insertAfter($(this))
+				})
+				
+				
+			})
+			
+		</script>
+	</body>
+</html>

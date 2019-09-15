@@ -1,0 +1,18 @@
+#box {
+	width: 600px;
+	height: 400px;
+	border: solid 1px red;
+	position: relative;
+}
+
+
+#ball {
+	width: 50px;
+	height: 50px;
+	/* yuan ban jing */
+	border-radius: 25px;
+	background-color: yellow;
+	position: absolute;
+	left: 0;
+	top: 0;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js">
+		</script>
+	</head>
+	<body>
+		div1:
+		<div>
+		</div>
+		
+		<button id="btn">按钮</button>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				
+			// var flag = false 
+			$("#btn").bind("click", function() {
+				// if (flag) {
+				// 	$("div").removeClass("box1")
+				// 	flag = false 
+				// } else  {
+				// 	$("div").addClass("box1")
+				// 	flag = true 
+				// }
+				
+				
+				/*有这个类删除  没这个类添加*/ 
+				$("div").toggleClass("box1")
+			})
+			})
+		</script>
+	</body>
+</html>

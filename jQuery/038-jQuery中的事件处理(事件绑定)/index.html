@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js">
+		</script>
+	</head>
+	<body>
+		<!-- <button onclick="console.log("asdfghjkl")"></button> -->
+		
+		<!-- <button onclick="func()"></button> -->
+		
+		<button id = "btn">添加一个P标签</button>
+		<div>
+			<p>sunck is a good man</p>
+			<p>sunck is a nice man</p>
+			<p>sunck is a cool man</p>
+			<p>sunck is a handsome man</p>
+		</div>
+		
+		<button id = "btn2">按钮</button>
+		
+		
+		<!-- 类似 window.onload 
+		页面的DOM元素加载完毕   就会触发这个事件
+		-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				
+				$("#btn").click(function() {
+					$("div").append("<p>我是新的</p>")
+				})
+				
+				
+				//  绑定事件  bind  delegate on  live 
+				
+
+				// 给四个p标签都加上绑定事件
+				// $("div p").bind("click", function() {
+				// 	//  $(this) 转换成jQuery包装集
+				// 	console.log($(this).text())
+				// })
+				// // 
+				// $("div p").unbind("click")
+				// 
+				/*
+				问题:
+				1、隐式迭代(标签多、消耗资源)
+				2、对于尚未存在的标签无法绑定
+				*/
+			   
+			   
+			   //  实际是绑定给p的
+			   // $("div").delegate("p", "click", function() {
+				  //  console.log($(this).text())
+			   // })
+			   // 
+			   // $("div").undelegate("p", "click")
+			   
+			   
+			   // 给div绑定事件 传递给p元素
+			 //   $("div").on("click", "p", function() {
+				//    console.log($(this).text())
+			 //   })
+				// 
+			 //   $("div").off("click","p")
+			  
+				
+				// 绑定一次性事件
+				$("#btn2").one("click", function() {
+					console.log("！@#￥%^&*（……")
+				})
+				
+			})
+			
+			
+			
+		</script>
+	</body>
+</html>

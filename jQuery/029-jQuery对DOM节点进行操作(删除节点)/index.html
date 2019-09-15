@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js">
+		</script>
+	</head>
+	<body>
+		<div id="box1">
+			<p>sunck is a nice man</p>
+			<p>sunck is a good man</p>
+		</div>
+		<!-- 
+		remove()   用于从DOM中匹配删除的元素
+		 
+		detach()  
+		
+		empty()     把标签的内容清空了
+		 -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var $p1 = $("div p:first")
+				
+				// $p1.remove()  //  完全删除 看不到
+				
+				$p1.detach()  //  删除了还可以用
+				
+				
+			})
+			
+		</script>
+	</body>
+</html>

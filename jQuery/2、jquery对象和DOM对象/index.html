@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div id="box1"></div>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+	
+	
+				// DOM对象
+				var jsDiv = document.getElementById("box1")
+				
+				
+				// jQuery对象 
+				// 在页面上输出 sunck is a good man 
+				// 相当于  document.getElementById("box1")
+				var $jqDiv = $("#box1").html("sunck is a good man")
+				
+				
+				// jq - DOM 
+				// 1 
+				var jsDiv1 = $jqDiv[0]
+				console.log($jqDiv)
+				console.log(jsDiv1)
+				// 2 
+				var jsDiv2 = $jqDiv.get(0)
+				
+				
+				// DOM - jq 
+				var $jqDiv1 = $ (jsDiv)
+				
+				
+			})
+		</script>
+	</body>
+</html>

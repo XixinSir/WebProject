@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+#mainScreen {
+	width: 372px;
+	height: 555px;
+	position: relative;
+	margin: 0 auto;
+	
+	/* 超过的部分将隐藏 */
+	overflow: hidden;
+}
+
+.bg {
+	width: 372px;
+	height: 555px;
+	position:absolute;
+	background-image: url(../img/bg.jpg);
+}
+
+#bg2 {
+	position: absolute;
+	top: -555px;
+}
+
+/* 飞机 */
+#airplane {
+	width: 109px;
+	height: 82px;
+	position: absolute;
+	background-image: url(../img/hero.jpg);
+	
+	left: 135px;
+	top: 473px;
+}
+
+
+.bullent {
+	position: absolute;
+	width: 12px;
+	height: 18px;
+	background-image: url(../img/bullent.jpg);
+	/* 图片和div完全是一样大 */
+	background-size: 12px 18px;
+	position: absolute;
+}  
+
+
+.tank {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/enemy.jpg);
+	/* 图片和div完全是一样大 */
+	background-size: 40px 40px;
+}
